@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>92 Stafford Street 2022</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="photos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Photos</a> 
+    <a href="index.html#basics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Basics</a> 
+    <a href="index.html#breakdown" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Utility Breakdown</a>  
+    <a href="details.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Details</a> 
+    <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>92 Stafford Street</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>2022</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/image_house_fullview.jpg" style="width:100%" onclick="onClick(this0" alt="92 Stafford Street, Street View">
+      <img src="images/image_kitchen_2.jpg" style="width:100%" onclick="onClick(this)" alt="Kitchen island bench with a view of the backyard">
+    </div>
+    <div class="w3-half">
+      <img src="images/image_bathroom_1.jpg" style="width:100%" onclick="onClick(this)" alt="Kitchen Area">
+      <img src="images/image_kitchen.jpeg" style="width:100%" onclick="onClick(this)" alt="Top Floor Bathroom">
+    </div>
+  </div>
+
+  <div class="w3-container" id="basics" style="margin-top:75px">
+    <a href="photos.html"onclick="w3_close()" w3-bar-item><button class="w3-button w3-red w3-padding-large w3-hover-black">More Photos ></button></a>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="basics" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>The Basics</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.514512896091!2d170.49206791557148!3d-45.881021879108125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac063227e871%3A0x253dfe048bc4025a!2s92%20Stafford%20Street%2C%20Dunedin%20Central%2C%20Dunedin%209016!5e0!3m2!1sen!2snz!4v1634557395777!5m2!1sen!2snz" width="400" height="300" style="border:0; float:right;" allowfullscreen="" loading="lazy"></iframe>
+    <p>Let's start with the basics. 
+    <ul>
+    	<li><h3>Address is 92 Stafford Street, Dunedin Central</h3></li>
+    	<li><h3>Move in date is 01/01/2022</h3></li>
+    	<li><h3><a href="files/Tenancy_Agreement_Stafford.pdf" style="text-decoration: none">Tenancy Agreement</a> and <a href="files/Bond_Lodgement_Stafford.pdf" style="text-decoration: none">Bond Lodgement</a> forms have been emailed out</h3></li>
+    	<li><h3>Property maintenance is <b>OUR</b> job</h3></li>
+    	<li><h3>Property comes unfurnished</font></h3></li>
+    </ul>
+    <i>*Will have to double check lease on Castle as I believe MI date is negotioable</i>
+    <br>
+    <i>**Rent & Bond can be sorted later</i>
+    </p>
+  </div>
+  
+  
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="breakdown" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Utility Breakdown</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Below is a breakdown on the actual spend on utilities and rent. This is designed to show the lowest price we will have to pay per person.<div></div><b><i>Hyper Fibre 2000 </i></b>is more expensive, but is up-to 2x faster and more reliable, and provides better ping. Speeds are up-to <b>2000/2000</b> upload and download from just $3 more each. <b><i>Fibre Pro</i> </b>is the same gigabit speeds <b>(950/500)</b> as Castle St.
+</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32"><a id="showcase">FibrePro</a></li>
+        <li class="w3-padding-5">Fibre Internet: <h3>$95/month</h3></li>
+        <li class="w3-padding-5">Red Bin Hire: <h3>$33.8/month</h3></li>
+        <li class="w3-padding-5">Base Rent: <h3>$1,000/week</h3></li>
+        <li class="w3-padding-5">Oven Gas Bottle <h3>~$35 per bottle</h3></li>
+        <li class="w3-padding-5">Power: <h3>Ranges from $240 - $290</h3></li>
+        <li class="w3-padding-5">
+          <h3>~$183 for 6</h3>
+          <span class="w3-opacity">per person, per week</span>
+        </li>
+<!--        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">_</button>
+        </li>-->
+
+      </ul></div>
+
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">HyperFibre</li>
+        <li class="w3-padding-5">Fibre Internet: <h3>$159/month</h3></li>
+        <li class="w3-padding-5">Red Bin Hire: <h3>$33.8/month</h3></li>
+        <li class="w3-padding-5">Base Rent: <h3>$1,000/week</h3></li>
+        <li class="w3-padding-5">Oven Gas Bottle <h3>~$35 per bottle</h3></li>
+        <li class="w3-padding-5">Power: <h3>Ranges from $240 - $290</h3></li>
+        <li class="w3-padding-5">
+          <h3>~$185 for 6</h3>
+          <span class="w3-opacity">per person, per week</span>
+        </li>
+
+    </div>
+  </div>
+
+
+<!--
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">@nickandersos</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
